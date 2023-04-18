@@ -13,13 +13,13 @@ main {
 }
 
 nav {
-    width: 60px;
+    width: 50px;
     height: 100%;
 }
 
-/* CSS right side block */
+/* Right side block */
 .ms_side {
-    width: calc(100% - 30px);
+    width: calc(100% - 50px);
 }
 
 .ms_side-header {
@@ -54,6 +54,20 @@ nav {
     font-size: 1.5rem;
 }
 
+/* Left side block (nav) */
+nav {
+    background-image: url(img/sidebar-bg.png);
+    /* background-color: darkblue; */
+}
+
+nav .icon {
+    color: white;
+    padding: 0.7rem;
+}
+
+nav span {
+    display: none;
+}
 
 /* DEBUG */
 header,
@@ -76,9 +90,25 @@ nav,
     }
 }
 
+
 @media (min-width: 768px) {}
 
+
+
 @media (min-width: 992px) {
+    nav {
+        width: 120px;
+    }
+
+    nav span {
+        display: inline;
+        padding-left: 0.5rem;
+    }
+
+    .ms_side {
+        width: calc(100% - 120px);
+    }
+
     .hidden-sm {
         display: inline;
     }
