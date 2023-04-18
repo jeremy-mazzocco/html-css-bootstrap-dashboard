@@ -1,0 +1,35 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    height: 60px;
+}
+
+main {
+    height: calc(100vh - 70px);
+}
+
+nav {
+    width: 60px;
+    height: 100%;
+}
+
+.side {
+    width: calc(100% - 30px);
+}
+
+
+/* DEBUG */
+header,
+main,
+nav,
+.side,
+.side-header {
+    background-color: blueviolet;
+    border: 1px solid;
+}
+
+.side-header {
+    height: 100px;
+}
