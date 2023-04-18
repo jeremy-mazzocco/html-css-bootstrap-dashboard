@@ -1,3 +1,5 @@
+/* MY CSS */
+
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -15,8 +17,41 @@ nav {
     height: 100%;
 }
 
-.side {
+/* CSS right side block */
+.ms_side {
     width: calc(100% - 30px);
+}
+
+.ms_side-header {
+    color: white;
+    font-size: 0.75rem;
+}
+
+.ms_side-header span {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 4px 8px;
+    border-radius: 20px;
+    margin-right: 3px;
+}
+
+.ms_side-header h3 {
+    display: inline-block;
+}
+
+.ms_side-header p {
+    padding-top: 0.5rem;
+}
+
+.ms_side-header i {
+    margin: 0px 3px;
+}
+
+.hidden-sm {
+    display: none;
+}
+
+#number {
+    font-size: 1.5rem;
 }
 
 
@@ -24,12 +59,31 @@ nav {
 header,
 main,
 nav,
-.side,
-.side-header {
+.ms_side,
+.ms_side-header {
     background-color: blueviolet;
     border: 1px solid;
 }
 
-.side-header {
-    height: 100px;
+
+
+
+/* RESPONSIVE */
+
+@media (min-width: 576px) {
+    #number {
+        margin-top: -1rem;
+    }
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {
+    .hidden-sm {
+        display: inline;
+    }
+
+    .hidden-lg {
+        display: none;
+    }
 }
