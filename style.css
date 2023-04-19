@@ -45,6 +45,7 @@ header img {
 .ms_right {
     text-align: center;
     line-height: 55px;
+    font-size: 11px;
 }
 
 .bi-list,
@@ -135,13 +136,75 @@ header img {
 
 /* right side block Tables */
 
+.ms_table h5 {
+    background-color: rgb(251, 248, 248);
+    padding: 0.7rem;
+    border: 1px solid rgb(208, 208, 208);
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
 
+}
+
+.ms_table .text {
+    border: 1px solid rgb(208, 208, 208);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.ms_table th {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.ms_table td {
+    font-size: 0.8rem;
+}
+
+td img {
+    max-width: 100%;
+    width: 22px;
+    margin-right: 0.5rem;
+}
+
+.ms_table .label {
+    text-align: center;
+    border-radius: 7px;
+    color: white;
+}
+
+.ms_table .done {
+    width: 2.5rem;
+    background-color: rgb(2, 165, 70);
+}
+
+.ms_table .process {
+    width: 3.5rem;
+    background-color: rgb(252, 252, 1);
+}
+
+.ms_table .fail {
+    width: 2.5rem;
+    background-color: rgb(252, 1, 1);
+}
+
+td i {
+    border: 2px solid rgb(163, 161, 161);
+    border-radius: 5px;
+    margin-right: 2px;
+    padding: 4px;
+    color: rgb(163, 161, 161);
+}
+
+.hide-md {
+    display: none;
+}
 
 
 /* Left side block (nav) */
 nav {
     background-image: url(img/sidebar-bg.png);
     background-color: #0d093a;
+
 }
 
 nav .icon {
@@ -163,9 +226,8 @@ nav,
 } */
 
 .blue {
-    background-color: blue;
     border: 1px solid;
-    height: 100px;
+    min-height: 100px;
 }
 
 
@@ -176,10 +238,16 @@ nav,
     #number {
         margin-top: -1rem;
     }
+
+
 }
 
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    .hide-md {
+        display: inline-block;
+    }
+}
 
 
 
