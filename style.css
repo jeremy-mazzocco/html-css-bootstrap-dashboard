@@ -77,6 +77,8 @@ header img {
 /* Right side block - Header */
 .ms_side {
     width: calc(100% - 50px);
+    overflow: scroll;
+    height: 100%;
 }
 
 .ms_side-header {
@@ -191,6 +193,10 @@ td img {
     background-color: rgb(252, 1, 1);
 }
 
+.ms_table input {
+    margin-right: 3px;
+}
+
 td i {
     border: 2px solid rgb(163, 161, 161);
     border-radius: 5px;
@@ -221,14 +227,6 @@ nav span {
 }
 
 /* DEBUG */
-/* main,
-nav,
-.ms_side,
-.ms_side-header {
-    background-color: blueviolet;
-    border: 1px solid;
-} */
-
 .blue {
     border: 1px solid;
     min-height: 100px;
@@ -242,18 +240,13 @@ nav,
     #number {
         margin-top: -1rem;
     }
-
-
 }
-
 
 @media (min-width: 768px) {
     .hide-md {
         display: inline-block;
     }
 }
-
-
 
 @media (min-width: 992px) {
     #loghito {
@@ -296,4 +289,5 @@ nav,
         margin-right: 0 !important;
         margin-top: 0 !important;
     }
+
 }

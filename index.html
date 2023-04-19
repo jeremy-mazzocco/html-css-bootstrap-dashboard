@@ -76,7 +76,7 @@
             </div>
         </nav>
         <!--Right side block -->
-        <div class="overflow-hidden ms_side">
+        <div class="ms_side">
             <!-- right side header -->
             <div class="row g-0 p-2 bg-primary ms_side-header">
                 <div class="col-12 col-md-4 col-lg-2 order-md-3">
@@ -197,127 +197,167 @@
                 </div>
             </div>
             <!-- right side tables -->
-            <div class="d-flex flex-wrap flex-column flex-lg-row">
-                <div class="col-12 col-lg-8 p-3 ms_table">
-                    <h5 class="m-0">
-                        PROSSIME CLASSI
-                    </h5>
-                    <div class="text p-2">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Nome</th>
-                                    <th scope="col" class="hide-md">Data Inizio</th>
-                                    <th scope="col" class="hide-md">ROI</th>
-                                    <th scope="col">Stato</th>
-                                    <th scope="col">Azioni</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><img src="img/class-avatar.jpg">Classe 75</td>
-                                    <td class="hide-md">15 Feb 2021</td>
-                                    <td class="hide-md">20%</td>
-                                    <td>
-                                        <div class="label done">Done</div>
-                                    </td>
-                                    <td>
-                                        <i class="bi bi-pencil-fill"></i>
-                                        <i class="bi bi-x"></i>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><img src="img/class-avatar.jpg">Classe 76</td>
-                                    <td class="hide-md">16 Feb 2021</td>
-                                    <td class="hide-md">20%</td>
-                                    <td>
-                                        <div class="label done">Done</div>
-                                    </td>
-                                    <td>
-                                        <i class="bi bi-pencil-fill"></i>
-                                        <i class="bi bi-x"></i>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><img src="img/class-avatar.jpg">Classe 77</td>
-                                    <td class="hide-md">17 Feb 2021</td>
-                                    <td class="hide-md">20%</td>
-                                    <td>
-                                        <div class="label process">Process</div>
-                                    </td>
-                                    <td>
-                                        <i class="bi bi-pencil-fill"></i>
-                                        <i class="bi bi-x"></i>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><img src="img/class-avatar.jpg">Classe 78</td>
-                                    <td class="hide-md">18 Feb 2021</td>
-                                    <td class="hide-md">20%</td>
-                                    <td>
-                                        <div class="label done">Done</div>
-                                    </td>
-                                    <td>
-                                        <i class="bi bi-pencil-fill"></i>
-                                        <i class="bi bi-x"></i>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><img src="img/class-avatar.jpg">Classe 79</td>
-                                    <td class="hide-md">19 Feb 2021</td>
-                                    <td class="hide-md">20%</td>
-                                    <td>
-                                        <div class="label fail">Failed</div>
-                                    </td>
-                                    <td>
-                                        <i class="bi bi-pencil-fill"></i>
-                                        <i class="bi bi-x"></i>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><img src="img/class-avatar.jpg">Classe 80</td>
-                                    <td class="hide-md">20 Feb 2021</td>
-                                    <td class="hide-md">20%</td>
-                                    <td>
-                                        <div class="label done">Done</div>
-                                    </td>
-                                    <td>
-                                        <i class="bi bi-pencil-fill"></i>
-                                        <i class="bi bi-x"></i>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><img src="img/class-avatar.jpg">Classe 81</td>
-                                    <td class="hide-md">21 Feb 2021</td>
-                                    <td class="hide-md">20%</td>
-                                    <td>
-                                        <div class="label fail">Failed</div>
-                                    </td>
-                                    <td>
-                                        <i class="bi bi-pencil-fill"></i>
-                                        <i class="bi bi-x"></i>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><img src="img/class-avatar.jpg">Classe 82</td>
-                                    <td class="hide-md">22 Feb 2021</td>
-                                    <td class="hide-md">20%</td>
-                                    <td>
-                                        <div class="label done">Done</div>
-                                    </td>
-                                    <td>
-                                        <i class="bi bi-pencil-fill"></i>
-                                        <i class="bi bi-x"></i>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                    <div class="p-3 ms_table">
+                        <h5 class="m-0">
+                            PROSSIME CLASSI
+                        </h5>
+                        <div class="text p-2">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Nome</th>
+                                        <th scope="col" class="hide-md">Data Inizio</th>
+                                        <th scope="col" class="hide-md">ROI</th>
+                                        <th scope="col">Stato</th>
+                                        <th scope="col">Azioni</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><img src="img/class-avatar.jpg">Classe 75</td>
+                                        <td class="hide-md">15 Feb 2021</td>
+                                        <td class="hide-md">20%</td>
+                                        <td>
+                                            <div class="label done">Done</div>
+                                        </td>
+                                        <td>
+                                            <i class="bi bi-pencil-fill"></i>
+                                            <i class="bi bi-x"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="img/class-avatar.jpg">Classe 76</td>
+                                        <td class="hide-md">16 Feb 2021</td>
+                                        <td class="hide-md">20%</td>
+                                        <td>
+                                            <div class="label done">Done</div>
+                                        </td>
+                                        <td>
+                                            <i class="bi bi-pencil-fill"></i>
+                                            <i class="bi bi-x"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="img/class-avatar.jpg">Classe 77</td>
+                                        <td class="hide-md">17 Feb 2021</td>
+                                        <td class="hide-md">20%</td>
+                                        <td>
+                                            <div class="label process">Process</div>
+                                        </td>
+                                        <td>
+                                            <i class="bi bi-pencil-fill"></i>
+                                            <i class="bi bi-x"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="img/class-avatar.jpg">Classe 78</td>
+                                        <td class="hide-md">18 Feb 2021</td>
+                                        <td class="hide-md">20%</td>
+                                        <td>
+                                            <div class="label done">Done</div>
+                                        </td>
+                                        <td>
+                                            <i class="bi bi-pencil-fill"></i>
+                                            <i class="bi bi-x"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="img/class-avatar.jpg">Classe 79</td>
+                                        <td class="hide-md">19 Feb 2021</td>
+                                        <td class="hide-md">20%</td>
+                                        <td>
+                                            <div class="label fail">Failed</div>
+                                        </td>
+                                        <td>
+                                            <i class="bi bi-pencil-fill"></i>
+                                            <i class="bi bi-x"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="img/class-avatar.jpg">Classe 80</td>
+                                        <td class="hide-md">20 Feb 2021</td>
+                                        <td class="hide-md">20%</td>
+                                        <td>
+                                            <div class="label done">Done</div>
+                                        </td>
+                                        <td>
+                                            <i class="bi bi-pencil-fill"></i>
+                                            <i class="bi bi-x"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="img/class-avatar.jpg">Classe 81</td>
+                                        <td class="hide-md">21 Feb 2021</td>
+                                        <td class="hide-md">20%</td>
+                                        <td>
+                                            <div class="label fail">Failed</div>
+                                        </td>
+                                        <td>
+                                            <i class="bi bi-pencil-fill"></i>
+                                            <i class="bi bi-x"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="img/class-avatar.jpg">Classe 82</td>
+                                        <td class="hide-md">22 Feb 2021</td>
+                                        <td class="hide-md">20%</td>
+                                        <td>
+                                            <div class="label done">Done</div>
+                                        </td>
+                                        <td>
+                                            <i class="bi bi-pencil-fill"></i>
+                                            <i class="bi bi-x"></i>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="p-3 ms_table">
+                        <h5 class="m-0">
+                            F.A.Q.
+                        </h5>
+                        <div class="text p-2">
+                            jjbb
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-4 blue"></div>
-                <div class="col-12 col-lg-8 blue"></div>
-                <div class="col-12 col-lg-4 blue"></div>
-
+                <div class="col-12 col-lg-4">
+                    <div class="p-3 ms_table">
+                        <h5 class="m-0">
+                            Todo
+                        </h5>
+                        <div class="text p-2">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td><input class="form-check-input" type="checkbox" value="">Kick off nuove
+                                            classi</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="form-check-input" type="checkbox" value="">Lezioe su
+                                            Bootstrap
+                                            5 in classe #75</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="form-check-input" type="checkbox" value="">Controllare
+                                            username Github studenti</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="p-3 ms_table">
+                        <h5 class="m-0">
+                            GRAPH
+                        </h5>
+                        <div class="text p-2">
+                            jjbb
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
