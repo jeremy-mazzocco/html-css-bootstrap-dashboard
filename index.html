@@ -38,7 +38,15 @@
                 <i class="bi bi-list"></i>
                 <i class="bi bi-question-circle-fill"></i>
                 <i class="bi bi-three-dots-vertical"></i>
-                <i class="bi bi-bell-fill"></i>
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false" id="bell">
+                    <i class="bi bi-bell-fill"></i>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Profilo</a></li>
+                    <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
             </div>
         </div>
     </header>
@@ -52,7 +60,7 @@
                 </div>
                 <div class="icon">
                     <i class="fa-solid fa-hammer"></i>
-                    <span>Stat</span>
+                    <span>Stats</span>
                 </div>
                 <div class="icon">
                     <i class="fa-solid fa-signal"></i>
@@ -68,10 +76,89 @@
         </nav>
         <!--Right side block -->
         <div class="overflow-hidden ms_side">
-            <div class="row g-0 bg-primary ms_side-header">
+            <!-- right side header -->
+            <div class="row g-0 p-2 bg-primary ms_side-header">
                 <div class="col-12 col-md-4 col-lg-2 order-md-3">
-                    Nuovo Studente +
+                    <p id="new-student">
+                        Nuovo Studente
                     </p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        data-bs-whatever="@mdo">
+                        <span id="plus">
+                            +
+                        </span>
+                    </button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen-md-down">
+                            <div class="modal-content" id="ms_form">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Inserisci un nuovo studente</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="recipient-name" class="col-form-label">Nome</label>
+                                            <input type="text" class="form-control" id="recipient-name">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="recipient-name" class="col-form-label">Cognome</label>
+                                            <input type="text" class="form-control" id="recipient-name">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="basic-url" class="form-label">Email</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text" id="basic-addon3">@</span>
+                                                <input type="text" class="form-control" id="basic-url"
+                                                    aria-describedby="basic-addon3 basic-addon4">
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="recipient-name" class="col-form-label">Password</label>
+                                            <input type="text" class="form-control" id="recipient-name">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="recipient-name" class="col-form-label">Indirizzo</label>
+                                            <input type="text" class="form-control" id="recipient-name">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="recipient-name" class="col-form-label">Citta</label>
+                                            <input type="text" class="form-control" id="recipient-name">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="inputGroupSelect01" class="col-form-label">Stato</label>
+                                            <select class="form-select" id="inputGroupSelect01">
+                                                <option selected>Choose...</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="recipient-name" class="col-form-label">CAP</label>
+                                            <input type="text" class="form-control" id="recipient-name">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="basic-url" class="form-label">Foto</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text" id="basic-addon3">Scegli file</span>
+                                                <input type="text" class="form-control" id="basic-url"
+                                                    aria-describedby="basic-addon3 basic-addon4"
+                                                    placeholder="Nessun file selezionato">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Send message</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-12 col-md-4 col-lg-6 order-md-1">
                     <h3>
@@ -108,10 +195,17 @@
                     </p>
                 </div>
             </div>
+            <!-- right side tables -->
+            <div class="d-flex flex-wrap flex-column flex-lg-row">
+                <div class="col-12 col-lg-8 blue"></div>
+                <div class="col-12 col-lg-4 blue"></div>
+                <div class="col-12 col-lg-8 blue"></div>
+                <div class="col-12 col-lg-4 blue"></div>
+
+            </div>
         </div>
-
-
     </main>
+
 
 
 
