@@ -33,7 +33,7 @@ header {
     display: none;
 }
 
-header img {
+img {
     max-width: 100%;
 }
 
@@ -166,8 +166,7 @@ header img {
     font-size: 0.8rem;
 }
 
-td img {
-    max-width: 100%;
+td>img {
     width: 22px;
     margin-right: 0.5rem;
 }
