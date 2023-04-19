@@ -48,6 +48,10 @@ header img {
     font-size: 11px;
 }
 
+.ms_right ul {
+    line-height: 1rem;
+}
+
 .bi-list,
 .bi-question-circle-fill,
 .bi-three-dots-vertical {
